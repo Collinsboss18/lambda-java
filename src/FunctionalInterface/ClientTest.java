@@ -9,6 +9,7 @@ public class ClientTest {
 	
 	private static void threadUsingLamdaExpression() {
 		/** Converting Anonymous Thread Method to Lambda expression */
+		/** Since functional interface have only one method, lamdbda */
 		Runnable r = () -> System.out.println("My function is excuting...");
 		
 		Thread thread = new Thread(r);
@@ -17,7 +18,7 @@ public class ClientTest {
 
 	public static void threadUsingAnonymous() {
 		Runnable r = new Runnable() {
-			
+		
 			public void run () {
 				System.out.println("My function is excuting...");
 			}
