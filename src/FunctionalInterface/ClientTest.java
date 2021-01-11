@@ -6,10 +6,13 @@ public class ClientTest {
 		threadUsingAnonymous();
 		threadUsingLamdaExpression();
 	}
-
+	
 	private static void threadUsingLamdaExpression() {
+		/** Converting Anonymous Thread Method to Lambda expression */
+		Runnable r = () -> System.out.println("My function is excuting...");
 		
-		
+		Thread thread = new Thread(r);
+		thread.start();
 	}
 
 	public static void threadUsingAnonymous() {
