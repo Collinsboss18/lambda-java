@@ -12,8 +12,6 @@ public class ClientTest {
 		/** Since functional interface have only one method, lambda expression can easily provide
 		 * the method implementation. */
 		Runnable r = () -> System.out.println("My function is excuting...");
-		
-		
 		Thread thread = new Thread(r);
 		thread.start();
 	}
